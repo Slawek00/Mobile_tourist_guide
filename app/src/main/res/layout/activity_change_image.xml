@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activites.changeImage.ChangeImageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/background_profile"
+        android:paddingStart="@dimen/layoutPadding"
+        android:paddingEnd="@dimen/layoutPadding">
+
+
+        <ImageButton
+            android:id="@+id/imageProfileUpdate"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:background="@drawable/circle_image_view"
+            android:src="@drawable/add" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/repButtonChangeImage"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/rep"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/faceblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileCreate"
+            app:layout_constraintVertical_bias="0.967" />
+
+    </LinearLayout>
+
+</layout>

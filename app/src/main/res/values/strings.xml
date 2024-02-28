@@ -1,0 +1,55 @@
+<resources>
+    <!--Stringi używane we framentach-->
+
+    <string name="app_name" translatable="false">MTGtoSz</string>
+    <string name="banner" translatable="false">Odkryj Szczecin już dziś!</string>
+    <string name="decription" translatable="false">Najlepsza aplikacja za pomocą, której odkryjesz niesamowite tajemnice Szczecina!</string>
+    <string name="login" translatable="false">Zaloguj się</string>
+    <string name="register" translatable="false">Stwórz konto</string>
+    <string name="baner" translatable="false">Logowanie</string>
+    <string name="pass" translatable="false">Hasło</string>
+    <string name="user_reg" translatable="false">Nazwa użytkownika</string>
+    <string name="banner_register" translatable="false">Rejestracja</string>
+    <string name="pass_rep" translatable="false">Potwierdź hasło</string>
+    <string name="mail" translatable="false">Adres e-mail</string>
+    <string name="recover_text" translatable="false">Nie pamiętasz hasła?</string>
+    <string name="search" translatable="false">Szukaj</string>
+    <string name="rep" translatable="false">Akceptuj</string>
+    <string name="checkbox_reg" translatable="false">Zapoznałem się z <a href="http://slawek00.pythonanywhere.com/">regulaminem</a> korzystania z aplikacji</string>
+    <string name="show_pass" translatable="false">Pokaż hasło</string>
+    <string name="quest" translatable="false">Wybierz swoje zainteresowania</string>
+    <string name="start" translatable="false">Rozpocznij trasę</string>
+    <string name="add" translatable="false">Dodaj do ulubionych</string>
+    <string name="userRating" translatable="false">Ocena użytkowników:</string>
+    <string name="yourRating" translatable="false">Twoja ocena:</string>
+    <string name="fav" translatable="false">Ulubione trasy</string>
+    <string name="hobbyUser" translatable="false">Zainteresowania</string>
+    <string name="settings" translatable="false">Ustawienia</string>
+    <string name="deleteFav" translatable="false">Usuń z ulubionych</string>
+    <string name="error_connect" translatable="false">Sprawdź czy Twoje urządzenie ma dostęp do internetu</string>
+
+    <!--Stringi używane we fragmecie settings-->
+
+    <string name="header_edit" translatable="false">Edycja profilu</string>
+    <string name="change_name" translatable="false">Zmień nazwę</string>
+    <string name="change_image" translatable="false">Zmień zdjęcie profilowe</string>
+    <string name="change_hobby" translatable="false">Edytuj zainteresowania</string>
+    <string name="report" translatable="false">Zgłoś błędy</string>
+    <string name="header_settings" translatable="false">Ustawienia</string>
+    <string name="notification" translatable="false">Powiadomienia</string>
+    <string name="animation" translatable="false">Animacje</string>
+    <string name="change_language" translatable="false">Zmień język</string>
+    <string name="delete" translatable="false">Usuń konto</string>
+    <string name="version" translatable="false">Mobile Tourist Guide to Szczecin. Wersja aplikacji: 1.0</string>
+    <string name="signout" translatable="false">Wyloguj</string>
+
+    <!--Stringi używane w alertach -->
+    <string name="new_name" translatable="false">Nowa nazwa</string>
+    <string name="error" translatable="false">Zaobserwowany błąd</string>
+    <string name="info" translatable="false">Ta opcja jest obecnie niedostępna</string>
+    <string name="search_label" translatable="false">Wyszukaj</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

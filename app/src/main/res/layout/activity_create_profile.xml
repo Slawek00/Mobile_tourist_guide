@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".activites.createProfile.CreateProfileActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_profile"
+    android:paddingStart="@dimen/layoutPadding"
+    android:paddingEnd="@dimen/layoutPadding">
+
+
+    <ImageButton
+        android:id="@+id/imageProfileCreate"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/circle_image_view"
+        android:src="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="@string/quest"
+        android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCreateProfile"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/repButton"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/rep"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/faceblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileCreate"
+        app:layout_constraintVertical_bias="0.967" />
+
+</LinearLayout>
+</layout>

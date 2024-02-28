@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Podstawowy motyw aplikacji -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/facebluealpha</item>
+        <item name="colorPrimaryDark">@color/faceblue</item>
+        <item name="colorAccent">@color/whitesmoke</item>
+        <item name="fontFamily">@font/roboto_condensed_regular</item>
+        <item name="buttonStyle">@style/buttonStyle</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.Image</item>
+    </style>
+
+    <style name="buttonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/whitesmoke</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Image" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/lightgray</item>
+        <item name="colorControlActivated">@color/gold</item>
+    </style>
+
+
+
+</resources>

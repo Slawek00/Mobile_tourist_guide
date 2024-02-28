@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settingsFragment.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:background="@color/faceblue">
+
+                <ImageButton
+                    android:id="@+id/imageBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/arrow_back"
+                    android:importantForAccessibility="no" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/labelEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/header_edit"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/faceblue"
+                android:background="@color/whitesmoke"
+                app:drawableLeftCompat="@drawable/baseline_create_24" />
+
+            <TextView
+                android:id="@+id/changeName"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_name"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+
+            <TextView
+                android:id="@+id/changeImage"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_image"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+            <TextView
+                android:id="@+id/report"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+            <TextView
+                android:id="@+id/labelSettings"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/header_settings"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/faceblue"
+                android:background="@color/whitesmoke"
+                app:drawableLeftCompat="@drawable/baseline_settings_24" />
+
+            <TextView
+                android:id="@+id/not"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+            <TextView
+                android:id="@+id/anim"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/animation"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_language"
+                android:textColor="@color/lightgray"
+                android:textSize="28sp"
+                android:layout_weight="0"
+                app:drawableRightCompat="@drawable/arrow_forward" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:layout_marginStart="@dimen/layoutPadding"
+                android:layout_marginEnd="@dimen/layoutPadding"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/lightgray"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20sp"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/versionApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightgray"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/version" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:layout_marginStart="@dimen/layoutPadding"
+                android:layout_marginEnd="@dimen/layoutPadding"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/faceblue"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="20sp"
+                android:text="@string/signout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

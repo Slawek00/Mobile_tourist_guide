@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mobile_tourist_guide.mainScreen.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mobile_tourist_guide.profileScreen.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.mobile_tourist_guide.mapScreen.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <argument
+            android:name="points"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mobile_tourist_guide.settingsFragment.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.mobile_tourist_guide.detailFragment.DetailFragment"
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_mapFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+</navigation>
